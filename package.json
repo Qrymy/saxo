@@ -1,6 +1,16 @@
 {
-  "name": "root",
+  "name": "saxo",
   "private": true,
+  "homepage": "https://github.com/Qrymy/saxo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Qrymy/saxo.git"
+  },
+  "license": "MIT",
+  "author": "Qrymy",
+  "workspaces": {
+    "packages": ["packages/*"]
+  },
   "devDependencies": {
     "lerna": "^3.22.1"
   }
