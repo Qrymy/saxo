@@ -1,6 +1,14 @@
 {
-  "packages": [
-    "packages/*"
-  ],
-  "version": "0.0.0"
+  "packages": ["packages/*"],
+  "version": "fixed",
+  "npmClient": "yarn",
+  "useWorkspaced": true,
+  "command": {
+    "bootstrap": {
+      "npmClientArgs": ["--ignore-engines"]
+    },
+    "version": {
+      "push": false
+    }
+  }
 }
