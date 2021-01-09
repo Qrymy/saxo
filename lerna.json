@@ -2,7 +2,7 @@
   "packages": ["packages/*"],
   "version": "fixed",
   "npmClient": "yarn",
-  "useWorkspaced": true,
+  "useWorkspaces": true,
   "command": {
     "bootstrap": {
       "npmClientArgs": ["--ignore-engines"]
