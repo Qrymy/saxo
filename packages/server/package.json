@@ -15,7 +15,9 @@
     "dist"
   ],
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "typecheck": "tsc",
+    "build": "esbuild --bundle --outdir=dist --minify --sourcemap --format=cjs --platform=node src/index.ts",
+    "predeploy": "yarn typecheck && yarn build"
   },
   "engines": {
     "npm": "please_use_yarn_instead"
