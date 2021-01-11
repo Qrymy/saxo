@@ -1,0 +1,21 @@
+{
+  "name": "@saxo/server",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://github.com/Qrymy/saxo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Qrymy/saxo",
+    "directory": "packages/server"
+  },
+  "license": "MIT",
+  "author": "Qrymy",
+  "main": "dist/index.js",
+  "files": ["dist"],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "engines": {
+    "npm": "please_use_yarn_instead"
+  }
+}
