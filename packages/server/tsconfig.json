@@ -12,7 +12,9 @@
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "baseUrl": "./",
-    "paths": {},
+    "paths": {
+      "@/*": ["src/*"],
+    },
     "esModuleInterop": true
   },
   "include": ["src/**/*"]
