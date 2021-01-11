@@ -1,0 +1,16 @@
+{
+  "name": "@saxo/shared",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://github.com/Qrymy/saxo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Qrymy/saxo",
+    "directory": "packages/shared"
+  },
+  "license": "MIT",
+  "author": "Qrymy",
+  "engines": {
+    "npm": "please_use_yarn_instead"
+  }
+}
