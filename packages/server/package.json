@@ -24,5 +24,9 @@
   },
   "devDependencies": {
     "esbuild": "^0.8.31"
+  },
+  "dependencies": {
+    "firebase-admin": "^9.4.2",
+    "firebase-functions": "^3.13.0"
   }
 }
