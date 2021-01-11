@@ -11,11 +11,16 @@
   "license": "MIT",
   "author": "Qrymy",
   "main": "dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "engines": {
     "npm": "please_use_yarn_instead"
+  },
+  "devDependencies": {
+    "esbuild": "^0.8.31"
   }
 }
