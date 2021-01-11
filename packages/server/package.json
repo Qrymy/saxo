@@ -15,7 +15,6 @@
     "dist"
   ],
   "scripts": {
-    "typecheck": "tsc",
     "build": "esbuild --bundle --outdir=dist --minify --sourcemap --format=cjs --platform=node src/index.ts",
     "predeploy": "yarn typecheck && yarn build"
   },

@@ -1,5 +1,8 @@
 import functions from 'firebase-functions'
+import { getColor } from '@shared/utils/getColor'
 
 export const getCat = functions.https.onRequest(async (_req, res) => {
-  res.send('I am a cat.')
+  const color = getColor()
+
+  res.send(`I'm a ${color} cat.`)
 })

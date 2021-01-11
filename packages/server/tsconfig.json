@@ -1,21 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es3",
-    "module": "commonjs",
-    "noEmit": true,
-    "isolatedModules": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
+      "@shared/*": ["../shared/src/*"]
     },
-    "esModuleInterop": true
   },
+  "extends": "../../tsconfig.base.json",
   "include": ["src/**/*"]
 }
