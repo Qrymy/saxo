@@ -1,6 +1,4 @@
-const colors = ['red', 'brown', 'gray', 'black', 'white', 'beige'] as const
-
-type Color = typeof colors[number]
+import { colors, Color } from '@saxo/types/Color'
 
 export const getColor = (): Color => {
   return colors[Math.floor(Math.random() * colors.length)]
