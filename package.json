@@ -17,7 +17,8 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --stream --scope={@saxo/server,@saxo/shared,@saxo/types,@saxo/web}",
-    "clean": "lerna clean -y"
+    "clean": "lerna clean -y",
+    "watch": "lerna run watch --stream --scope={@saxo/server,@saxo/shared,@saxo/types,@saxo/web}"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.12.0",

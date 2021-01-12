@@ -10,7 +10,8 @@
     "directory": "packages/web"
   },
   "scripts": {
-    "dev": "next dev"
+    "build": "next build",
+    "watch": "next dev"
   },
   "dependencies": {
     "next": "^10.0.5",
