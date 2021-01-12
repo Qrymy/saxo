@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "build": "yarn typecheck && esbuild --bundle --outdir=dist --minify --sourcemap --format=cjs --platform=node --tsconfig=tsconfig.build.json src/index.ts",
-    "clean": "yarn clean:dist && clean:tsbuildinfo",
+    "clean": "yarn clean:dist && yarn clean:tsbuildinfo",
     "clean:dist": "rimraf dist",
     "clean:tsbuildinfo": "rimraf tsconfig*tsbuildinfo",
     "jest": "jest --coverage",
@@ -27,7 +27,8 @@
     "typecheck": "yarn clean && yarn tsc"
   },
   "devDependencies": {
-    "esbuild": "^0.8.31"
+    "esbuild": "^0.8.31",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "firebase-admin": "^9.4.2",

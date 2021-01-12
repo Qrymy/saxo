@@ -1,6 +1,6 @@
 import functions from 'firebase-functions'
-import { getColor } from '@shared/utils/getColor'
-import { REGIONS } from '@shared/const/Regions'
+import { getColor } from '@saxo/shared/utils/getColor'
+import { REGIONS } from '@saxo/shared/const/Regions'
 
 export const getDog = functions
   .region(REGIONS.FUNCTIONS)
