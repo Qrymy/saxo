@@ -8,3 +8,6 @@
 
 # next.js
 **/.next/
+
+# typescript
+*.tsbuildinfo
