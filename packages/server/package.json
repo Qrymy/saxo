@@ -26,9 +26,6 @@
     "tsc": "tsc --p tsconfig.build.json",
     "typecheck": "yarn clean && yarn tsc"
   },
-  "engines": {
-    "npm": "please_use_yarn_instead"
-  },
   "devDependencies": {
     "esbuild": "^0.8.31"
   },
