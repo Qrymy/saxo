@@ -27,8 +27,6 @@
     "typecheck": "yarn clean && yarn tsc"
   },
   "dependencies": {
-    "@saxo/shared": "file:../shared",
-    "@saxo/types": "file:../types",    
     "firebase-admin": "^9.4.2",
     "firebase-functions": "^3.13.0"
   },

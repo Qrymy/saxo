@@ -14,8 +14,6 @@
     "watch": "next dev"
   },
   "dependencies": {
-    "@saxo/shared": "file:../shared",
-    "@saxo/types": "file:../types",
     "next": "^10.0.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
