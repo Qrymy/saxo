@@ -1,7 +1,39 @@
 {
-  "name": "root",
+  "name": "saxo",
+  "version": "1.0.0",
   "private": true,
+  "homepage": "https://github.com/Qrymy/saxo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Qrymy/saxo.git"
+  },
+  "license": "MIT",
+  "author": "Qrymy",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build --stream --scope={@saxo/server,@saxo/shared,@saxo/types,@saxo/web}",
+    "clean": "lerna clean -y",
+    "watch": "lerna run watch --stream --scope={@saxo/server,@saxo/shared,@saxo/types,@saxo/web}"
+  },
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "@typescript-eslint/eslint-plugin": "^4.12.0",
+    "@typescript-eslint/parser": "^4.12.0",
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.7",
+    "lerna": "^3.22.1",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
+  },
+  "engines": {
+    "npm": "please_use_yarn_instead"
   }
 }

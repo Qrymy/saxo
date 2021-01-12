@@ -1,0 +1,37 @@
+{
+  "name": "@saxo/server",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://github.com/Qrymy/saxo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Qrymy/saxo",
+    "directory": "packages/server"
+  },
+  "license": "MIT",
+  "author": "Qrymy",
+  "main": "dist/index.js",
+  "module": "dist.index.js",
+  "types": "dist/index.d.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn typecheck && esbuild --bundle --outdir=dist --minify --sourcemap --format=cjs --platform=node --tsconfig=tsconfig.build.json src/index.ts",
+    "clean": "yarn clean:dist && yarn clean:tsbuildinfo",
+    "clean:dist": "rimraf dist",
+    "clean:tsbuildinfo": "rimraf tsconfig*tsbuildinfo",
+    "jest": "jest --coverage",
+    "test": "yarn jest",
+    "tsc": "tsc --p tsconfig.build.json",
+    "typecheck": "yarn clean && yarn tsc"
+  },
+  "devDependencies": {
+    "esbuild": "^0.8.31",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "firebase-admin": "^9.4.2",
+    "firebase-functions": "^3.13.0"
+  }
+}

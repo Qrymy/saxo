@@ -1,0 +1,21 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "noEmit": true,
+    "paths": {
+      "@saxo/shared/*": ["../shared/dist/*"],
+      "@saxo/types/*": ["../types/dist/*"],
+    }
+  },
+  "include": ["src/**/*", "next-env.d.ts"],
+  "exclude": ["node_modules"],
+  "references": [
+    {
+      "path": "../shared"
+    },{
+      "path": "../types"
+    }
+  ]
+}

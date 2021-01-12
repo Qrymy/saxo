@@ -1,0 +1,13 @@
+# yarn
+.yarn
+**/node_modules/
+
+# server
+**/.firebase
+**/dist
+
+# next.js
+**/.next/
+
+# typescript
+*.tsbuildinfo
