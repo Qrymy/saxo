@@ -1,6 +1,6 @@
 {
   "name": "@saxo/shared",
-  "version": null,
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://github.com/Qrymy/saxo",
   "repository": {
@@ -25,6 +25,9 @@
     "tsc": "tsc --p tsconfig.build.json",
     "typescript": "yarn run clean && yarn run tsc",
     "watch": "yarn run tsc -w --preserveWatchOutput"
+  },
+  "dependencies": {
+    "@saxo/types": "file:../types"
   },
   "devDependencies": {
     "rimraf": "^3.0.2"

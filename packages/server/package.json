@@ -1,6 +1,6 @@
 {
   "name": "@saxo/server",
-  "version": null,
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://github.com/Qrymy/saxo",
   "repository": {
@@ -31,6 +31,8 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
+    "@saxo/shared": "file:../shared",
+    "@saxo/types": "file:../types",    
     "firebase-admin": "^9.4.2",
     "firebase-functions": "^3.13.0"
   }

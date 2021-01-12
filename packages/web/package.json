@@ -1,6 +1,6 @@
 {
   "name": "@saxo/web",
-  "version": null,
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://github.com/Qrymy/saxo",
   "license": "MIT",
@@ -14,6 +14,8 @@
     "watch": "next dev"
   },
   "dependencies": {
+    "@saxo/shared": "file:../shared",
+    "@saxo/types": "file:../types",
     "next": "^10.0.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
