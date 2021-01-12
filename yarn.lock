@@ -1269,7 +1269,7 @@
 "@saxo/shared@file:packages/shared":
   version "1.0.0"
   dependencies:
-    "@saxo/types" "file:../../Library/Caches/Yarn/v4/npm-@saxo-shared-1.0.0-76623065-a76b-43f0-a055-29d01e4262d3-1610425207866/node_modules/@saxo/types"
+    "@saxo/types" "file:../../Library/Caches/Yarn/v4/npm-@saxo-shared-1.0.0-2002c2c1-85f0-4e30-a583-dcda8bf45145-1610431570354/node_modules/@saxo/types"
 
 "@saxo/types@file:packages/types":
   version "1.0.0"
@@ -8919,6 +8919,14 @@ ts-pnp@^1.1.6:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
   integrity sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw==
+
+tscpaths@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/tscpaths/-/tscpaths-0.0.9.tgz#c77abfde6820920f10c64f83c27753b9505814ab"
+  integrity sha512-tz4qimSJTCjYtHVsoY7pvxLcxhmhgmwzm7fyMEiL3/kPFFVyUuZOwuwcWwjkAsIrSUKJK22A7fNuJUwxzQ+H+w==
+  dependencies:
+    commander "^2.20.0"
+    globby "^9.2.0"
 
 tslib@^1.11.1, tslib@^1.8.1, tslib@^1.9.0:
   version "1.14.1"
