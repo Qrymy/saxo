@@ -1,10 +1,23 @@
 {
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
+    "module": "commonjs",
+    "noEmit": false,
+    "outDir": "dist",
+    "rootDir": "src",
+    "sourceMap": true,
+    "target": "es2018",
     "paths": {
-      "@/*": ["src/*"],
+      "@saxo/shared/*": ["src/*"],
+      "@saxo/types/*": ["../types/dist/*"]
     },
   },
-  "extends": "../../tsconfig.base.json",
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+  "references": [
+    {
+      "path": "../types"
+    }
+  ]
 }

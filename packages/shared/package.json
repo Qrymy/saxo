@@ -10,6 +10,22 @@
   },
   "license": "MIT",
   "author": "Qrymy",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "yarn clean:dist && yarn clean:tsbuildinfo",
+    "clean:dist": "rimraf dist",
+    "clean:tsbuildinfo": "rimraf tsconfig*tsbuildinfo",
+    "jest": "jest --coverage",
+    "test": "yarn run jest",
+    "tsc": "tsc --p tsconfig.build.json",
+    "typescript": "yarn run clean && yarn run tsc",
+    "watch": "yarn run tsc -w --preserveWatchOutput"
+  },
   "engines": {
     "npm": "please_use_yarn_instead"
   }
