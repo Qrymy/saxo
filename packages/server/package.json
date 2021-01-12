@@ -26,14 +26,13 @@
     "tsc": "tsc --p tsconfig.build.json",
     "typecheck": "yarn clean && yarn tsc"
   },
-  "devDependencies": {
-    "esbuild": "^0.8.31",
-    "rimraf": "^3.0.2"
-  },
   "dependencies": {
     "@saxo/shared": "file:../shared",
     "@saxo/types": "file:../types",    
     "firebase-admin": "^9.4.2",
     "firebase-functions": "^3.13.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.8.31"
   }
 }

@@ -28,8 +28,5 @@
   },
   "dependencies": {
     "@saxo/types": "file:../types"
-  },
-  "devDependencies": {
-    "rimraf": "^3.0.2"
   }
 }

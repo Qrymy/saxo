@@ -25,8 +25,5 @@
     "tsc": "tsc --p tsconfig.build.json",
     "typescript": "yarn run clean && yarn run tsc",
     "watch": "yarn run tsc -w --preserveWatchOutput"
-  },
-  "devDependencies": {
-    "rimraf": "^3.0.2"
   }
 }

@@ -22,7 +22,6 @@
   },
   "devDependencies": {
     "@types/node": "^14.14.20",
-    "@types/react": "^17.0.0",
-    "rimraf": "^3.0.2"
+    "@types/react": "^17.0.0"
   }
 }
