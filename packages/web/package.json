@@ -12,7 +12,6 @@
   "scripts": {
     "build": "next build",
     "build:vercel": "cd ../ && yarn build",
-    "install:vercel": "cd ../ && yarn bootstrap",
     "watch": "next dev",
     "watch:vercel": "cd ../ && yarn watch"
   },
