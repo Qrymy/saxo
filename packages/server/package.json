@@ -11,12 +11,20 @@
   "license": "MIT",
   "author": "Qrymy",
   "main": "dist/index.js",
+  "module": "dist.index.js",
+  "types": "dist/index.d.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "esbuild --bundle --outdir=dist --minify --sourcemap --format=cjs --platform=node src/index.ts",
-    "predeploy": "yarn typecheck && yarn build"
+    "build": "yarn typecheck && esbuild --bundle --outdir=dist --minify --sourcemap --format=cjs --platform=node --tsconfig=tsconfig.build.json src/index.ts",
+    "clean": "yarn clean:dist && clean:tsbuildinfo",
+    "clean:dist": "rimraf dist",
+    "clean:tsbuildinfo": "rimraf tsconfig*tsbuildinfo",
+    "jest": "jest --coverage",
+    "test": "yarn jest",
+    "tsc": "tsc --p tsconfig.build.json",
+    "typecheck": "yarn clean && yarn tsc"
   },
   "engines": {
     "npm": "please_use_yarn_instead"
