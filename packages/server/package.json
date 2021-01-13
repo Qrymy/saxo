@@ -12,7 +12,7 @@
   "author": "Qrymy",
   "main": "dist/index.js",
   "module": "dist.index.js",
-  "types": "dist/index.d.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -26,12 +26,11 @@
     "tsc": "tsc --p tsconfig.build.json",
     "typecheck": "yarn clean && yarn tsc"
   },
-  "devDependencies": {
-    "esbuild": "^0.8.31",
-    "rimraf": "^3.0.2"
-  },
   "dependencies": {
     "firebase-admin": "^9.4.2",
     "firebase-functions": "^3.13.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.8.31"
   }
 }

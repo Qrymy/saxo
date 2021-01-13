@@ -11,7 +11,9 @@
   },
   "scripts": {
     "build": "next build",
-    "watch": "next dev"
+    "build:vercel": "cd ../ && yarn build",
+    "watch": "next dev",
+    "watch:vercel": "cd ../ && yarn watch"
   },
   "dependencies": {
     "next": "^10.0.5",
@@ -20,7 +22,6 @@
   },
   "devDependencies": {
     "@types/node": "^14.14.20",
-    "@types/react": "^17.0.0",
-    "rimraf": "^3.0.2"
+    "@types/react": "^17.0.0"
   }
 }

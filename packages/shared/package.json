@@ -12,7 +12,7 @@
   "author": "Qrymy",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "types": "dist/index.d.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -22,11 +22,8 @@
     "clean:tsbuildinfo": "rimraf tsconfig*tsbuildinfo",
     "jest": "jest --coverage",
     "test": "yarn run jest",
-    "tsc": "tsc --p tsconfig.build.json",
+    "tsc": "tsc --p tsconfig.build.json && tscpaths -p tsconfig.build.json -s ./src -o ./dist",
     "typescript": "yarn run clean && yarn run tsc",
     "watch": "yarn run tsc -w --preserveWatchOutput"
-  },
-  "devDependencies": {
-    "rimraf": "^3.0.2"
   }
 }

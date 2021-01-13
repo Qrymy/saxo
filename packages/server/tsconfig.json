@@ -4,18 +4,16 @@
     "baseUrl": ".",
     "module": "commonjs",
     "noImplicitReturns": true,
-    "noEmit": true,
     "outDir": "dist",
-    "rootDir": "src",
     "sourceMap": true,
     "target": "es2018",
     "paths": {
       "@saxo/server/*": ["src/*"],
-      "@saxo/shared/*": ["../shared/dist/*"],
-      "@saxo/types/*": ["../types/dist/*"]
+      "@saxo/shared/*": ["../shared/src/*"],
+      "@saxo/types/*": ["../types/src/*"]
     },
   }, 
-  "include": ["src/**/*"],
+  "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"],
   "references": [
     {
