@@ -13,7 +13,7 @@
       "@saxo/types/*": ["../types/src/*"]
     },
   }, 
-  "include": ["src/**/*"],
+  "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"],
   "references": [
     {
