@@ -5,12 +5,11 @@
     "composite": true,
     "module": "commonjs",
     "outDir": "dist",
-    "rootDir": "src",
     "sourceMap": true,
     "target": "es2018",
     "paths": {
       "@saxo/shared/*": ["src/*"],
-      "@saxo/types/*": ["../types/dist/*"]
+      "@saxo/types/*": ["../types/src/*"]
     },
   },
   "include": ["src/**/*"],
