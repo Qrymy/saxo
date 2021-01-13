@@ -4,7 +4,6 @@
     "baseUrl": ".",
     "module": "commonjs",
     "noImplicitReturns": true,
-    "noEmit": true,
     "outDir": "dist",
     "rootDir": "src",
     "sourceMap": true,

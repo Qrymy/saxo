@@ -3,10 +3,9 @@
   "compilerOptions": {
     "allowJs": true,
     "baseUrl": ".",
-    "noEmit": true,
     "paths": {
-      "@saxo/shared/*": ["../shared/dist/*"],
-      "@saxo/types/*": ["../types/dist/*"],
+      "@saxo/shared/*": ["../shared/src/*"],
+      "@saxo/types/*": ["../types/src/*"],
     }
   },
   "include": ["src/**/*", "next-env.d.ts"],

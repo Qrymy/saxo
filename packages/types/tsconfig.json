@@ -4,7 +4,6 @@
     "baseUrl": ".",
     "composite": true,
     "module": "commonjs",
-    "noEmit": false,
     "outDir": "dist",
     "rootDir": "src",
     "target": "es2018",
