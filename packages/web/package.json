@@ -11,9 +11,7 @@
   },
   "scripts": {
     "build": "next build",
-    "build:vercel": "cd ../ && yarn build",
-    "watch": "next dev",
-    "watch:vercel": "cd ../ && yarn watch"
+    "watch": "next dev"
   },
   "dependencies": {
     "next": "^10.0.5",
